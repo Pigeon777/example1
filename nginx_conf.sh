@@ -9,6 +9,6 @@ wget https://github.com/Pigeon777/example1/raw/master/nginx.conf
 wget https://github.com/Pigeon777/example1/raw/master/example.conf
 cp -f nginx.conf /etc/nginx/nginx.conf 
 cp -f example.conf /etc/nginx/sites-available/example.conf
-ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/example.conf
+ln -f -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/example.conf
 
 service nginx reload
